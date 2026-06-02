@@ -1,6 +1,6 @@
 # Cassis
 
-The context layer that grounds analytics agents in your definitions, calculations, and relationships. Built with your data team, kept alive by every conversation.
+The living context layer that grounds analytics agents in your definitions, calculations, and relationships. Built with your data team, kept alive by every conversation.
 
 [getcassis.com](https://getcassis.com) · [docs.getcassis.com](https://docs.getcassis.com) · [blog.getcassis.com](https://blog.getcassis.com)
 
