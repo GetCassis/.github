@@ -1,10 +1,10 @@
 # Cassis
 
-The context layer between your data and the agents that query it. Your business definitions live in a
-git repository you own; Cassis grounds every question in them, detects where the context is wrong or
-missing from real use, and keeps it true through pull requests you review.
+Cassis does context maintenance for analytics agents. Your business definitions live in a Git
+repository you own, changes run against evals, and merging an approved pull request publishes the
+context your agents read over MCP.
 
-[getcassis.com](https://www.getcassis.com) · [docs](https://docs.getcassis.com) · [blog](https://www.getcassis.com/blog)
+[getcassis.com](https://getcassis.com) · [docs](https://docs.getcassis.com) · [blog](https://blog.getcassis.com)
 
 ## Start here
 
