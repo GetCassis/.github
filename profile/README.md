@@ -16,7 +16,7 @@ Three ways in, depending on whether you want to bootstrap context, see the full 
 | **[cassis-demo-stallora](https://github.com/GetCassis/cassis-demo-stallora)** | See the whole loop on a sample marketplace warehouse. Fifteen minutes, from your own terminal and your own agent, nothing of yours involved. |
 | **[cassis-ontology-starter](https://github.com/GetCassis/cassis-ontology-starter)** | Start an ontology on your own schema. The CI gates, the MCP config and the modeling guide, with none of the content — that part is yours. |
 
-Both are GitHub templates: use the template, don't fork.
+The demo and starter are GitHub templates: use the template, don't fork.
 
 ## Build with it
 
