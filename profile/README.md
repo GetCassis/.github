@@ -8,10 +8,11 @@ context your agents read over MCP.
 
 ## Start here
 
-Two ways in, depending on whether you want to see it or use it.
+Three ways in, depending on whether you want to bootstrap context, see the full loop, or start from a clean ontology.
 
 | | |
 |---|---|
+| **[ontology-bootstrap](https://github.com/GetCassis/ontology-bootstrap)** | Assemble a reviewable first ontology from the dbt project, schema, dashboards and docs you already have. Evidence stays attached and unknowns become questions. No account or Cassis key required. [Read the measured write-up](https://blog.getcassis.com/a-blank-beats-a-guess/). |
 | **[cassis-demo-stallora](https://github.com/GetCassis/cassis-demo-stallora)** | See the whole loop on a sample marketplace warehouse. Fifteen minutes, from your own terminal and your own agent, nothing of yours involved. |
 | **[cassis-ontology-starter](https://github.com/GetCassis/cassis-ontology-starter)** | Start an ontology on your own schema. The CI gates, the MCP config and the modeling guide, with none of the content — that part is yours. |
 
