@@ -1,39 +1,40 @@
 # Cassis
 
 Cassis does context maintenance for analytics agents. Your business definitions live in a Git
-repository you own, changes run against evals, and merging an approved pull request publishes the
-context your agents read over MCP.
+repository you own. Real questions expose missing or wrong definitions, and Cassis proposes fixes
+when there is enough evidence. Changes run against evals, and merging an approved pull request
+publishes the context your agents read over MCP.
 
 [getcassis.com](https://getcassis.com) · [docs](https://docs.getcassis.com) · [blog](https://blog.getcassis.com) · [reading list](https://github.com/GetCassis/analytics-agent-articles)
 
 ## Start here
 
-Three things you can run today with no account, in order of effort.
-
-| | |
+| What you want to do | Where to start |
 |---|---|
-| **[cassis-demo-stallora](https://github.com/GetCassis/cassis-demo-stallora)** | See the whole loop on a sample marketplace warehouse. Fifteen minutes, from your own terminal and your own agent, nothing of yours involved. A GitHub template: use the template, don't fork. |
-| **[dbt-agent-readiness](https://github.com/GetCassis/dbt-agent-readiness)** | Audit your dbt project for what an AI agent will get wrong if you point it at the data today. Runs on your own repository. |
-| **[ontology-bootstrap](https://github.com/GetCassis/ontology-bootstrap)** | Assemble a reviewable first ontology from the dbt project, schema, dashboards and docs you already have. Evidence stays attached and unknowns become questions. [Read the measured write-up](https://blog.getcassis.com/a-blank-beats-a-guess/). |
-
-## Reading
-
-| | |
-|---|---|
-| **[analytics-agent-articles](https://github.com/GetCassis/analytics-agent-articles)** | A curated list of write-ups from data teams building analytics agents: Anthropic, OpenAI, Ramp, GitHub, Gorgias and more, with reading notes organized by problem. Suggestions and corrections welcome. |
+| **Try the maintenance loop** | **[cassis-demo-stallora](https://github.com/GetCassis/cassis-demo-stallora)**: ask a question on sample marketplace data, resolve a missing definition, and ship the fix through a tested pull request. Uses your own agent, with no connection to your data. Requires GitHub and Cassis accounts, Python and an MCP client. Use the GitHub template to create your repository. |
+| **Audit your dbt project** | **[dbt-agent-readiness](https://github.com/GetCassis/dbt-agent-readiness)**: find what an analytics agent will get wrong if you point it at your data today. Requires your dbt project, Python and a coding agent. No Cassis account or warehouse connection needed. |
+| **Build your first context** | **[ontology-bootstrap](https://github.com/GetCassis/ontology-bootstrap)**: assemble a reviewable ontology from your existing assets. Evidence stays attached and unknowns become questions. Requires a dbt project, schema export, Python and a coding agent. No Cassis account needed; runs use model tokens and include human review checkpoints. [See run requirements](https://github.com/GetCassis/ontology-bootstrap#run-it), or [read the measured write-up](https://blog.getcassis.com/a-blank-beats-a-guess/). |
 
 ## Connect your own project
 
-Once you have a Cassis project and a key ([talk to us](https://getcassis.com/contact/)). Start from the demo template and replace the `cassis/` tree with your own.
+[Talk to us](https://getcassis.com/contact/) to connect your own warehouse and get a Cassis project.
+If you used the bootstrap kit, [connect the ontology you just generated](https://github.com/GetCassis/ontology-bootstrap#keeping-it-current).
+For the CI and MCP setup, use the demo template and replace its `cassis/` tree with your own ontology.
 
-| | |
+| Repository | What it does |
 |---|---|
 | **[cassis-cli](https://github.com/GetCassis/cassis-cli)** | Validate, test and eval an ontology from your terminal, then publish it. The same commands run in CI to gate pull requests. `pip install cassis-cli` |
-| **[skills](https://github.com/GetCassis/skills)** | Agent skills for authoring an ontology and for querying through MCP. `/plugin marketplace add GetCassis/skills` |
+| **[skills](https://github.com/GetCassis/skills)** | Agent skills for authoring an ontology and for querying through MCP. In Claude Code, add the marketplace with `/plugin marketplace add GetCassis/skills`, then [install the skills you need](https://github.com/GetCassis/skills#install). |
 | **[cassis-ontology-examples](https://github.com/GetCassis/cassis-ontology-examples)** | Two complete ontology trees to copy from: a minimal skeleton and a fully authored one. |
+
+## Reading
+
+| Repository | What you will find |
+|---|---|
+| **[analytics-agent-articles](https://github.com/GetCassis/analytics-agent-articles)** | A curated list of write-ups from data teams building analytics agents: Anthropic, OpenAI, Ramp, GitHub, Gorgias and more, with reading notes organized by problem. Suggestions and corrections welcome. |
 
 ## Research
 
-| | |
+| Repository | What you will find |
 |---|---|
 | **[research](https://github.com/GetCassis/research)** | Benchmarks, harnesses and the run data behind our write-ups. |
