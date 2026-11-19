@@ -1,9 +1,12 @@
 # Cassis
 
-Cassis does context maintenance for analytics agents. Your business definitions live in a Git
-repository you own. Real questions expose missing or wrong definitions, and Cassis proposes fixes
-when there is enough evidence. Changes run against evals, and merging an approved pull request
-publishes the context your agents read over MCP.
+Cassis is the data context layer that improves with use. Claude, ChatGPT or whatever agent you use
+reads fresh, governed metrics, definitions and business rules from it over one MCP.
+
+Every question tests that context. When an answer needs a correction, an eval fails or a dbt model
+changes, Cassis flags the gap and, once it has enough evidence, drafts the fix. Your data team
+reviews it as a tested pull request in a Git repository you own, and merging it publishes the new
+version to every agent.
 
 [getcassis.com](https://getcassis.com) · [docs](https://docs.getcassis.com) · [blog](https://blog.getcassis.com) · [reading list](https://github.com/GetCassis/analytics-agent-articles)
 
